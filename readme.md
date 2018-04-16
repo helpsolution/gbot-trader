@@ -74,8 +74,18 @@ The **token** is a string along the lines of `110201543:AAHdqTcvCH1vGWJxfSeofSAs
 **NAME_COIN_TWO**   | Trading currency | string | usd
 **EXCHANGE**        | The choice of the exchange <br> **wex** <br> **poloniex** (inverted pairs) <br> **bittrex** (inverted pairs) <br> **exmo** <br> **bitfinex** <br> **liqui** <br> **dsx** | string | -
 EXCHANGE_HOST       | Host exchange API. If the primary host is not available. | string | -
+
+
+
+#### Parameters for Telegram
+
+ Option | Description| Type | Default
+--------|------------|-----|----------
 TELEGRAM_TOKEN      | Telegram token    | string | -
 TELEGRAM_ID         | Your User ID Telegram | number | -
+URL_TELEGRAM        | URL API host Telegram | string | https://api.telegram.org
+SOCKS5_HOST         | HOST SOCKS5 | string | -
+SOCKS5_PORT         | PORT SOCKS5  | number | -
 TELEGRAM_OFF        | Disable Telegram | boolean | false
 
 > Option **TELEGRAM_OFF** disables the ability to use Telegram in the bot. All management and all notifications sent via Telegram are the same are disabled!
@@ -215,6 +225,7 @@ INTEGRITY_CONTROL_ORDERS            | Integrity control orders (**soft** or **ha
 TYPE_DATA_USED                      | Where to get information about the used orders: <br>  **active** - active orders <br> **history** - active orders + trading history | string | active
 FIRST_LOADING_HISTORY               | Download the history when you start the bot | boolean | false
 NUMBER_ROWS_LOAD_HISTORY            | Number of rows to load history | number | 100
+LOAD_HISTORY_DAYS                   | The number of days of history<br>While only used for Poloniex | number | 3
 CYCLES_AUTO_EXIT                    | How many cycles to make the exit | number | 0
 STOP_LOSS_PERCENT                   | Stop Loss percentage | number | 0
 TRAILING_STOP_PERCENT               | Trailing stop percentage | number | 0
@@ -224,8 +235,7 @@ CAPITALIZATION_BUY_ORDER            | Includes partial capitalization of Buy ord
 STRATEGY_AUTO_REVERS                | Auto switching strategy to reverse | boolean | false
 OFFSET_LAST_ORDER_PERCENT           | The percentage of the price distance from the last order to enable auto-switching of strategy | number | 5
 DELAY_TIME_CYCLES                   | The delay in seconds before the start of a new cycle after the execution of a profit order  | number | 0
-
-<!-- PERMANENT_DEPOSIT Use the calculation of the total deposit with the cache (Experimental) -->
+PERMANENT_DEPOSIT                   | Use the calculation of the total deposit with the cache | boolean | false
 
 > If the parameter **INTEGRITY_CONTROL_ORDERS** in `hard` mode, then a sell order will be installed only if the volume installed and executed buy orders will be the same.
 
