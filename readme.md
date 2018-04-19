@@ -361,6 +361,7 @@ To **launch the control panel** in a Telegram, send a message to:
 /trade              - Switches to the specified trading pair
 /stop [codeExit]    - The application shutsdown. codeExit - an optional exit code.
 /sell_all           - Sell on the market immediately. (Attention: The sale will be made without confirmation!)
+/buy_all            - Buy on the market immediately. (Attention: The buy will be made without confirmation!)
 /restart            - Restart GBot Trader
 /stats              - Trading statistics
 /note [ignore text] - The text in this line will be ignored. It can be used as a comment.
