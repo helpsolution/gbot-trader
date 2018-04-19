@@ -85,7 +85,9 @@ TELEGRAM_TOKEN      | Telegram token    | string | -
 TELEGRAM_ID         | Your User ID Telegram | number | -
 URL_TELEGRAM        | URL API host Telegram | string | https://api.telegram.org
 SOCKS5_HOST         | HOST SOCKS5 | string | -
-SOCKS5_PORT         | PORT SOCKS5  | number | -
+SOCKS5_PORT         | PORT SOCKS5  | number | 1080
+SOCKS5_USERNAME     | Username SOCKS5 | string | -
+SOCKS5_PASSWORD     | Password SOCKS5 | string | -
 TELEGRAM_OFF        | Disable Telegram | boolean | false
 
 > Option **TELEGRAM_OFF** disables the ability to use Telegram in the bot. All management and all notifications sent via Telegram are the same are disabled!

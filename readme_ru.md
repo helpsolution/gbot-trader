@@ -183,7 +183,9 @@ TELEGRAM_TOKEN          | Ваш токен для Telegram | string | -
 TELEGRAM_ID             | ID вашего пользователя в Telegram | number | -
 URL_TELEGRAM            | Адрес API Telegram | string | https://api.telegram.org
 SOCKS5_HOST             | Хост SOCKS5 | string | -
-SOCKS5_PORT             | Порт SOCKS5 | number | -
+SOCKS5_PORT             | Порт SOCKS5 | number | 1080
+SOCKS5_USERNAME         | Username SOCKS5 | string | -
+SOCKS5_PASSWORD         | Password SOCKS5 | string | -
 TELEGRAM_OFF            | Отключить Telegram. | boolean | false
 
 > Опция **TELEGRAM_OFF** отключает возможность использовать Telegram в боте. Всё управление и все уведомления посылаемые через Telegram будут так же отключены!
